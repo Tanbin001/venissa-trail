@@ -1,0 +1,12 @@
+html{
+    margin: 0 0;
+    overflow: hidden;
+}
+
+.vl{
+    border-left: 2px solid gray;
+    height: 50px;
+}
+.part{
+    padding-right: 20px;
+}
