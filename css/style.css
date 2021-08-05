@@ -10,3 +10,26 @@ html{
 .part{
     padding-right: 20px;
 }
+.logo{
+    transform: scale(1);
+    transition: transform 300ms ease-in;
+}
+.logo:hover{
+    transform: scale(1.3);
+}
+.hov-underline::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    height: 3px;
+    background-color: black;
+    transition: transform 300ms ease-in;
+
+    transform: scaleX(0);
+}
+.hov-underline:hover::before,
+.hov-underline:focus::before{
+    transform: scaleX(1);
+}
