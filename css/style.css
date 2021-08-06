@@ -1,21 +1,19 @@
 html{
     margin: 0 0;
-    overflow: hidden;
-}
-
-.vl{
-    border-left: 2px solid gray;
-    height: 50px;
-}
-.part{
-    padding-right: 20px;
+    overflow-x: hidden;
 }
 .logo{
     transform: scale(1);
+    font-family: serif;
     transition: transform 300ms ease-in;
 }
 .logo:hover{
     transform: scale(1.3);
+}
+.logo span{
+    font-family: sans-serif;
+    right: 5px;
+    position: relative;
 }
 .hov-underline::before{
     content: '';
@@ -32,4 +30,8 @@ html{
 .hov-underline:hover::before,
 .hov-underline:focus::before{
     transform: scaleX(1);
+}
+
+.fab:hover, .fas:hover{
+    color: #f0214f;
 }
